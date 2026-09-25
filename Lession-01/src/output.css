@@ -166,6 +166,9 @@
   }
 }
 @layer utilities {
+  .h-52 {
+    height: calc(var(--spacing) * 52);
+  }
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
