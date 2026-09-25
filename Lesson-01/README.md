@@ -74,4 +74,4 @@ style.css
 ```
 
 Output
-![Output](image.png)
+![Output](./images/image.png)
