@@ -166,11 +166,20 @@
   }
 }
 @layer utilities {
+  .grid {
+    display: grid;
+  }
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
+  .min-h-screen {
+    min-height: 100vh;
+  }
   .w-52 {
     width: calc(var(--spacing) * 52);
+  }
+  .place-content-center {
+    place-content: center;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
