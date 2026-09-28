@@ -54,7 +54,3 @@ A single-page marketing site for "Acme Rockets," built with semantic HTML and st
 
 - HTML5
 - Tailwind CSS (utility classes; dark mode via `dark:` variant)
-
-## License
-
-Add your preferred license here (e.g. MIT).

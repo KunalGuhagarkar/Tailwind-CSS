@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@utility section-min-height {
+  min-height: calc(100vh - 68px);
+}
+
+@custom-variant widescreen (@media (min-aspect-ratio: 3/2));
+@custom-variant tallscreen (@media (max-aspect-ratio: 1/1));
