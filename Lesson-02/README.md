@@ -43,13 +43,6 @@ A single-page marketing site for "Acme Rockets," built with semantic HTML and st
    npx serve .
    ```
 
-## Known Issues / TODO
-
-- Duplicate `id="rockets"` is used on two elements (the `<section>` wrapping the rocket cards and the `<h2>` inside it) — IDs must be unique; consider renaming one (e.g. `id="rockets-section"`).
-- The "Testimonials" and "Contact Us" `<section>` elements also reuse `id="rockets"` — update these to unique, descriptive IDs.
-- `#mobile-open-button` has no attached behavior yet — add a script to toggle the mobile nav on click.
-- Testimonials and Contact sections need content (currently just headings).
-
 ## Tech Stack
 
 - HTML5
