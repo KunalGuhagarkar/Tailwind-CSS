@@ -9,6 +9,7 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-teal-400: oklch(77.7% 0.152 181.912);
     --color-teal-500: oklch(70.4% 0.14 182.503);
     --color-teal-600: oklch(60% 0.118 184.704);
     --color-teal-700: oklch(51.1% 0.096 186.391);
@@ -697,6 +698,12 @@
     content: var(--tw-content);
   }
   @media (hover: hover) {
+    .hover\:bg-teal-400:hover {
+      background-color: var(--color-teal-400);
+    }
+    .hover\:bg-teal-500:hover {
+      background-color: var(--color-teal-500);
+    }
     .hover\:bg-teal-700:hover {
       background-color: var(--color-teal-700);
     }

@@ -116,26 +116,6 @@ All custom Tailwind configuration lives in `input.css`, so there is no `tailwind
    npx serve .
    ```
 
-## Known Issues / TODO
-
-**Mobile menu**
-- **Broken anchor:** the mobile "Testamonials" link points to `#testamonials`, but the section id is `testimonials`. Fix the `href` (and the label typo).
-- **Menu offset:** the menu uses `top-68`. In Tailwind v4 that is `17rem` (272px), not 68px. If you want it to sit directly under the header, use `top-full` or `top-17` (4.25rem).
-- **Invalid class:** `justify-content-center` isn't a Tailwind class; use `justify-center` (or `items-center`).
-- **Empty close button:** the `<button>` inside `#mobile-menu` has its `&times;` commented out, so it renders as an invisible tap target. Either restore the icon or remove the button.
-- **Accessibility:** the hamburger button has no `aria-label`, `aria-expanded`, or `aria-controls`, and `aria-expanded` isn't updated in `toggleMenu`. Consider also closing the menu on `Escape` and preventing background scroll while it's open.
-- **Resize state:** if the menu is open and the window is widened past `md`, the overlay stays open. Consider closing it on resize.
-
-**Rest of the page**
-- **Duplicate IDs:** `id="rockets"` appears on the Rockets `<section>`, its `<h2>`, and the Testimonials `<section>`. `id="contact"` appears on both the Contact `<section>` and its `<h2>`. IDs must be unique.
-- **Form submission:** `<form action="">` has no destination or `method`, and the Submit button has no explicit `type="submit"`.
-- **Button hover state:** the submit button uses `bg-teal-700 hover:bg-teal-700`, so hover looks identical to the default.
-- **Invalid utility:** `items-left` isn't a Tailwind class; use `items-start`.
-- **Header height coupling:** `section-min-height` hardcodes `68px` to match the header height.
-- **Footer year:** `<span id="year">` is hardcoded to `2026`.
-- **Typos:** "Testamonials" (footer and mobile nav), "occassions", and "bases on" in the testimonials copy.
-- **Page title:** still "Lesson 2".
-
 ## Tech Stack
 
 - HTML5

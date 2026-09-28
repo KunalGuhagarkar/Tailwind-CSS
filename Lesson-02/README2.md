@@ -76,18 +76,6 @@ The page uses these together (`widescreen:section-min-height tallscreen:section-
    npx serve .
    ```
 
-## Known Issues / TODO
-
-- **Duplicate IDs:** `id="rockets"` appears on the Rockets `<section>` *and* its `<h2>`, and again on the Testimonials section. `id="contact"` appears on both the Contact `<section>` and its `<h2>`. IDs must be unique; rename or remove the duplicates so anchor links behave predictably.
-- **Mobile nav:** `#mobile-open-button` shows a `☰` icon but has no click handler, so there's no mobile menu yet.
-- **Form submission:** `<form action="">` has no destination or `method`, and the Submit button has no explicit `type="submit"`. Wire it to a backend or form service.
-- **Button hover state:** the submit button uses `bg-teal-700 hover:bg-teal-700`, so hover looks identical to the default. Use a different shade for hover.
-- **Invalid utility:** `items-left` isn't a Tailwind class; use `items-start`.
-- **Header height coupling:** `section-min-height` hardcodes `68px` to match the header. If the header's padding or font size changes, update this value.
-- **Footer year:** `<span id="year">` is hardcoded to `2026`; update it with JavaScript if you want it dynamic.
-- **Typos:** "Testamonials" (footer nav), "occassions", and "bases on" in the testimonials copy.
-- **Page title:** still "Lesson 2"; change it to something descriptive.
-
 ## Tech Stack
 
 - HTML5

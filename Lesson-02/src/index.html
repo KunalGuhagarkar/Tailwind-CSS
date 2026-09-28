@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lesson 2</title>
+        <title>Acme Rockets</title>
         <link rel="stylesheet" href="./output.css" />
         <script src="./main.js" defer></script>
     </head>
@@ -43,7 +43,7 @@
             </section>
             <section
                 id="mobile-menu"
-                class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+                class="absolute top-full bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
             >
                 <button class="text-8xl self-end px-6">
                     <!-- &times; -->
@@ -63,9 +63,9 @@
                         >Our Rockets</a
                     >
                     <a
-                        href="#testamonials"
+                        href="#testimonials"
                         class="w-full text-center py-6 hover:opacity-90"
-                        >Testamonials</a
+                        >Testimonials</a
                     >
                     <a
                         href="#contact"
@@ -120,7 +120,7 @@
                 class="p-6 my-12 scroll-mt-2 widescreen:section-min-height tallscreen:section-min-height"
             >
                 <h2
-                    id="rockets"
+                    id="rockets-heading"
                     class="text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white"
                 >
                     Our Rockets
@@ -206,11 +206,11 @@
             <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
             <section
-                id="rockets"
+                id="testimonials"
                 class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
             >
                 <h2
-                    id="testimonials"
+                    id="testimonials-heading"
                     class="text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white"
                 >
                     Testimonials
@@ -242,12 +242,12 @@
                         >
                             The Acme Adventurer Rocket has thwarted my Illudium
                             Q-36 Explosive Space Modulator on several
-                            occassions.
+                            occasions.
                             <span class="italic"
                                 >This makes me very, very angry!</span
                             >
                             Nevertheless, K-9 and I have awarded Acme the
-                            Martian Contract for space exploration rockets bases
+                            Martian Contract for space exploration rockets based
                             on Acme's quality and sturdy designs.
                         </p>
                     </blockquote>
@@ -287,14 +287,14 @@
                 class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
             >
                 <h2
-                    id="contact"
+                    id="contact-heading"
                     class="text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white"
                 >
                     Contact Us
                 </h2>
                 <form
                     action=""
-                    class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+                    class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4"
                 >
                     <label for="subject">Subject</label>
                     <input
@@ -318,7 +318,7 @@
                         class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border-solid border-slate-900 dark:border-none dark:bg-white"
                     ></textarea>
                     <button
-                        class="bg-teal-700 hover:bg-teal-700 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+                        class="bg-teal-700 hover:bg-teal-500 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
                     >
                         Submit
                     </button>
@@ -342,7 +342,7 @@
                 <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
                     <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
                     <a href="#testimonials" class="hover:opacity-90"
-                        >Testamonials</a
+                        >Testimonials</a
                     >
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>
                 </nav>
